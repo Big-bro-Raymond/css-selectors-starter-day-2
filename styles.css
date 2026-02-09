@@ -759,7 +759,7 @@ ul#list-styling li::before {
     select the table header cells in the table styles section using the element/tag name, descendant, and ID selectors
 */
 /* ----- */
-table#table-styles th{ 
+.table-styles-section th{ 
     background-color: var(--blue);
     color: var(--white);
 }
@@ -770,7 +770,7 @@ table#table-styles th{
     select the odd table rows in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-table#table-styles tbody tr:nth-child(odd){ 
+.table-styles-section tr:nth-child(odd){ 
     background-color: var(--dv-orange);
 }
 
@@ -814,7 +814,7 @@ table#table-styles tbody tr:nth-child(odd){
     select all of the divs in the border styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-#border-styling div{
+#border-styling-section div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -851,7 +851,7 @@ table#table-styles tbody tr:nth-child(odd){
     select the third div in the border styling section using the ID, descendant, and class name selectors
 */
 /* ----- */
-#border-styling-section div:nth-of-type(3){
+#border-styling-section div.some-class-div:nth-child(3){
     width: 200px;
     height: 200px;
     border: 6px dashed var(--dv-yellow);
@@ -863,7 +863,7 @@ table#table-styles tbody tr:nth-child(odd){
     select the fourth div in the pseudo-class styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#border-styling-section div:nth-of-type(2){
+#pseudo-class-styling div.section div:nth-child(4){
     width: 150px;
     height: 150px;
     border: 6px double var(--dv-mint);
@@ -875,7 +875,7 @@ table#table-styles tbody tr:nth-child(odd){
     select the last div in the more styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-{
+#moreStylingSection div.styling:last-of-type {
     width: 100px;
     height: 100px;
     border: 6px inset var(--dv-lt-blue);
